@@ -7,6 +7,8 @@ export default function Player() {
 
   function handleClick() {
     setEnteredPlayerName(playerName.current.value);
+    //la sig sentencia limpia el input, aunque es imperativa y debe evitarse en React
+    playerName.current.value = ''
   }
 
   return (
